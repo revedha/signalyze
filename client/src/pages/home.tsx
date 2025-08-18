@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navigation } from "@/components/navigation";
 import { ContactForm } from "@/components/contact-form";
 import { DemoSignupForm } from "@/components/demo-signup-form";
+import TrueFocus from "@/components/TrueFocus";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search, Settings, Zap, CheckCircle, X, Mail, Phone } from "lucide-react";
@@ -11,8 +12,6 @@ import salesforceLogo from "@/assets/salesforce-logo.png";
 import zendeskLogo from "@/assets/zendesk-logo.png";
 import zohoLogo from "@/assets/zoho-logo.png";
 import freshdeskLogo from "@/assets/freshdesk-logo.png";
-import heroImage from "@assets/generated_images/Successful_business_team_collaboration_74c710dd.png";
-import problemImage from "@assets/generated_images/Overwhelmed_customer_support_team_cc68f16e.png";
 
 export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -31,58 +30,65 @@ export default function Home() {
       <section className="hero-gradient relative overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-24" id="hero-cta">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white animate-fade-in-up">
-              <div className="mb-6">
-                <span className="inline-block bg-white/10 text-white/90 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20 animate-pulse-slow">
-                  ✨ Trusted by leading Support Teams
-                </span>
-              </div>
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6" data-testid="text-hero-headline">
-                Turn Customer Complaints into 
-                <span className="block mt-3 text-transparent bg-gradient-to-r from-white via-secondary to-white bg-clip-text animate-gradient">
-                  Growth Opportunities
-                </span>
-              </h1>
-              <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl" data-testid="text-hero-subtitle">
-                We help SMBs cut down repetitive support tickets, build smarter knowledge bases, and empower agents with AI-driven insights.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 items-start">
-                <Button 
-                  onClick={() => {
-                    const demoSection = document.getElementById('demo-signup');
-                    if (demoSection) {
-                      demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }}
-                  className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 px-8 py-4 h-auto text-lg font-semibold shadow-xl border-2 border-white group"
-                  data-testid="button-hero-demo"
-                >
-                  Book a Demo 
-                  <span className="ml-2 group-hover:translate-x-1 transition-transform duration-200">→</span>
-                </Button>
-                <button 
-                  onClick={() => {
-                    const servicesSection = document.getElementById('services');
-                    if (servicesSection) {
-                      servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }}
-                  className="text-white hover:text-secondary transition-colors duration-200 px-8 py-4 text-lg font-medium underline underline-offset-4 hover:underline-offset-8"
-                  data-testid="button-hero-learn-more"
-                >
-                  Learn How It Works
-                </button>
-              </div>
-
+          <div className="text-center text-white animate-fade-in-up">
+            <div className="mb-6">
+              <span className="inline-block bg-white/10 text-white/90 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20 animate-pulse-slow">
+                ✨ Trusted by leading Support Teams
+              </span>
             </div>
-            <div className="lg:pl-8">
-              <img 
-                src={heroImage} 
-                alt="AI-powered support dashboard showing analytics and ticket management" 
-                className="rounded-2xl shadow-2xl w-full h-auto"
-                data-testid="img-hero-dashboard"
-              />
+            <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6" data-testid="text-hero-headline">
+              Turn 
+              <div className="my-4">
+                <TrueFocus 
+                  sentence="Customer Complaints"
+                  manualMode={false}
+                  blurAmount={5}
+                  borderColor="#66BE77"
+                  animationDuration={2}
+                  pauseBetweenAnimations={1}
+                />
+              </div>
+              into
+              <div className="my-4">
+                <TrueFocus 
+                  sentence="Growth Opportunities"
+                  manualMode={false}
+                  blurAmount={5}
+                  borderColor="#007B47"
+                  animationDuration={2}
+                  pauseBetweenAnimations={1}
+                />
+              </div>
+            </h1>
+            <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed max-w-4xl mx-auto" data-testid="text-hero-subtitle">
+              We help SMBs cut down repetitive support tickets, build smarter knowledge bases, and empower agents with AI-driven insights.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+              <Button 
+                onClick={() => {
+                  const demoSection = document.getElementById('demo-signup');
+                  if (demoSection) {
+                    demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+                className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 px-8 py-4 h-auto text-lg font-semibold shadow-xl border-2 border-white group"
+                data-testid="button-hero-demo"
+              >
+                Book a Demo 
+                <span className="ml-2 group-hover:translate-x-1 transition-transform duration-200">→</span>
+              </Button>
+              <button 
+                onClick={() => {
+                  const servicesSection = document.getElementById('services');
+                  if (servicesSection) {
+                    servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+                className="text-white hover:text-secondary transition-colors duration-200 px-8 py-4 text-lg font-medium underline underline-offset-4 hover:underline-offset-8"
+                data-testid="button-hero-learn-more"
+              >
+                Learn How It Works
+              </button>
             </div>
           </div>
         </div>
