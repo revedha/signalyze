@@ -160,8 +160,8 @@ export default function Home() {
                   <Search className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">DISCOVERY</h3>
-                <p className="text-muted-foreground mb-4">ANALYZE conversations, UNCOVER patterns</p>
-                <p className="text-sm text-muted-foreground">"We MAP recurring complaints and SHOW you where to FOCUS."</p>
+                <p className="text-muted-foreground mb-4">Analyze conversations, Uncover patterns</p>
+                <p className="text-sm text-muted-foreground">"We map recurring complaints and show you where to focus."</p>
               </CardContent>
             </Card>
 
@@ -171,8 +171,8 @@ export default function Home() {
                   <Settings className="w-8 h-8 text-secondary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">SOLUTIONING</h3>
-                <p className="text-muted-foreground mb-4">BUILD KB, FIX workflows</p>
-                <p className="text-sm text-muted-foreground">"We STREAMLINE your knowledge base and AUTOMATE repetitive issues."</p>
+                <p className="text-muted-foreground mb-4">Build KB, Fix workflows</p>
+                <p className="text-sm text-muted-foreground">"We streamline your knowledge base and automate repetitive issues."</p>
               </CardContent>
             </Card>
 
@@ -182,8 +182,8 @@ export default function Home() {
                   <Zap className="w-8 h-8 text-accent" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">ACCELERATION</h3>
-                <p className="text-muted-foreground mb-4">PLUG INTO Zendesk/Salesforce/Freshdesk</p>
-                <p className="text-sm text-muted-foreground">"AI-powered add-ons DEFLECT tickets and GUIDE agents in real time."</p>
+                <p className="text-muted-foreground mb-4">Plug into Salesforce/Zendesk/Zoho/Freshdesk</p>
+                <p className="text-sm text-muted-foreground">"AI-powered add-ons deflect tickets and guide agents in real time."</p>
               </CardContent>
             </Card>
           </div>
@@ -255,40 +255,40 @@ export default function Home() {
             </h2>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             <div className="flex justify-center" data-testid="logo-salesforce">
-              <div className="flex items-center justify-center h-16 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-6 group">
+              <div className="flex items-center justify-center h-24 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-8 group">
                 <img 
                   src={salesforceLogo} 
                   alt="Salesforce logo" 
-                  className="h-10 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                  className="h-16 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zendesk">
-              <div className="flex items-center justify-center h-16 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-6 group">
+              <div className="flex items-center justify-center h-24 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-8 group">
                 <img 
                   src={zendeskLogo} 
                   alt="Zendesk logo" 
-                  className="h-10 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                  className="h-16 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zoho">
-              <div className="flex items-center justify-center h-16 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-6 group">
+              <div className="flex items-center justify-center h-24 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-8 group">
                 <img 
                   src={zohoLogo} 
                   alt="Zoho logo" 
-                  className="h-10 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                  className="h-16 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-freshdesk">
-              <div className="flex items-center justify-center h-16 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-6 group">
+              <div className="flex items-center justify-center h-24 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-8 group">
                 <img 
                   src={freshdeskLogo} 
                   alt="Freshdesk logo" 
-                  className="h-10 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                  className="h-16 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </div>
