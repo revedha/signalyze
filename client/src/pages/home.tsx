@@ -5,7 +5,7 @@ import { DemoSignupForm } from "@/components/demo-signup-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search, Settings, Zap, CheckCircle, X, Mail, Phone } from "lucide-react";
-import { SiLinkedin } from "react-icons/si";
+import { SiLinkedin, SiSalesforce, SiZendesk } from "react-icons/si";
 import signalyzeLogo from "@/assets/signalyze-logo.png";
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
             <div className="text-white">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6" data-testid="text-hero-headline">
                 Turn Customer Complaints Into 
-                <span className="text-secondary"> Growth Opportunities</span>
+                <span className="text-white bg-primary/20 px-2 py-1 rounded"> Growth Opportunities</span>
               </h1>
               <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed" data-testid="text-hero-subtitle">
                 We help SMBs cut down repetitive support tickets, build smarter knowledge bases, and empower agents with AI-driven insights.
@@ -42,7 +42,7 @@ export default function Home() {
                       demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                   }}
-                  className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 h-auto text-lg font-semibold btn-hover shadow-xl"
+                  className="bg-white text-primary hover:bg-white/90 px-8 py-4 h-auto text-lg font-semibold btn-hover shadow-xl border-2 border-white"
                   data-testid="button-hero-demo"
                 >
                   Book a Demo
@@ -86,13 +86,19 @@ export default function Home() {
                   <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-1">
                     <X className="w-4 h-4 text-white" />
                   </div>
-                  <p className="text-lg text-muted-foreground font-medium">Agents wasting time searching for answers</p>
+                  <p className="text-lg text-muted-foreground font-medium">Agents time wasted searching for answers</p>
                 </div>
                 <div className="flex items-start space-x-4" data-testid="problem-item-4">
                   <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-1">
                     <X className="w-4 h-4 text-white" />
                   </div>
                   <p className="text-lg text-muted-foreground font-medium">Ticket queues → unhappy customers</p>
+                </div>
+                <div className="flex items-start space-x-4" data-testid="problem-item-5">
+                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-1">
+                    <X className="w-4 h-4 text-white" />
+                  </div>
+                  <p className="text-lg text-muted-foreground font-medium">Scattered information across tools → no single source of truth</p>
                 </div>
               </div>
             </div>
@@ -222,66 +228,38 @@ export default function Home() {
             </h2>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             <div className="flex justify-center" data-testid="logo-salesforce">
-              <div className="bg-muted rounded-lg p-4 w-full h-16 flex items-center justify-center">
-                <span className="text-muted-foreground font-medium">Salesforce</span>
+              <div className="flex items-center justify-center h-16">
+                <SiSalesforce className="h-12 w-12 text-[#00A1E0] opacity-70" />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zendesk">
-              <div className="bg-muted rounded-lg p-4 w-full h-16 flex items-center justify-center">
-                <span className="text-muted-foreground font-medium">Zendesk</span>
+              <div className="flex items-center justify-center h-16">
+                <SiZendesk className="h-12 w-12 text-[#03363D] opacity-70" />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-freshdesk">
-              <div className="bg-muted rounded-lg p-4 w-full h-16 flex items-center justify-center">
-                <span className="text-muted-foreground font-medium">Freshdesk</span>
+              <div className="flex items-center justify-center h-16">
+                <div className="h-12 w-12 bg-[#F79A3E] rounded-lg flex items-center justify-center opacity-70">
+                  <span className="text-white font-bold text-sm">F</span>
+                </div>
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zoho">
-              <div className="bg-muted rounded-lg p-4 w-full h-16 flex items-center justify-center">
-                <span className="text-muted-foreground font-medium">Zoho</span>
+              <div className="flex items-center justify-center h-16">
+                <div className="h-12 w-12 bg-[#E74C3C] rounded-lg flex items-center justify-center opacity-70">
+                  <span className="text-white font-bold text-sm">Z</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="mt-16 max-w-3xl mx-auto">
-            <Card className="bg-slate-50 p-8 text-center" data-testid="card-testimonial">
-              <CardContent className="p-0">
-                <p className="text-lg text-slate-700 italic mb-4">"Reduced 28% of repetitive tickets in 4 weeks"</p>
-                <div className="text-sm text-slate-500">— Coming Soon: Real Client Testimonial</div>
-              </CardContent>
-            </Card>
-          </div>
+
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="cta-gradient py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6" data-testid="text-cta-headline">
-            Ready to Fix Customer Support at the Root?
-          </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto" data-testid="text-cta-subtitle">
-            Stop fighting the symptoms. Let's solve the real problems in your customer support process.
-          </p>
-          
-          <div className="flex justify-center">
-            <Button 
-              onClick={() => {
-                const demoSection = document.getElementById('demo-signup');
-                if (demoSection) {
-                  demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-              }}
-              className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 h-auto text-lg font-semibold btn-hover shadow-xl"
-              data-testid="button-cta-demo"
-            >
-              Book a Demo
-            </Button>
-          </div>
-        </div>
-      </section>
+
 
       {/* Demo Signup Section */}
       <section className="py-16 lg:py-24 bg-muted" id="demo-signup">
