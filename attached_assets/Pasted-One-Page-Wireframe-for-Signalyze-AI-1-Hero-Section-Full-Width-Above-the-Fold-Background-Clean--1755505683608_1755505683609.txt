@@ -1,0 +1,96 @@
+One-Page Wireframe for Signalyze.AI
+1. Hero Section (Full-Width, Above the Fold)
+
+Background: Clean gradient or abstract AI-inspired pattern (not stocky).
+
+Left Side (Text):
+
+Headline: “Turn Customer Complaints Into Growth Opportunities.”
+
+Subhead: “We help SMBs cut down repetitive support tickets, build smarter knowledge bases, and empower agents with AI-driven insights.”
+
+CTA buttons:
+
+Primary: “Book a Free Diagnostic Call” (bright, standout color)
+
+Secondary: “See How It Works” (outline button)
+
+Right Side (Visual):
+
+Illustration of a support agent assisted by AI, or an animated dashboard showing “tickets decreasing.”
+
+2. Problem Section (2-Column Layout)
+
+Left Side (Icon List):
+
+❌ Same questions asked repeatedly
+
+❌ Outdated / unused knowledge base
+
+❌ Agents wasting time searching for answers
+
+❌ Ticket queues → unhappy customers
+
+Right Side (Visual):
+
+Illustration of a frustrated support team drowning in tickets.
+
+3. Approach Section (Three Horizontal Steps)
+
+Headline: “How We Solve It”
+
+Each step in its own card with an icon + short copy.
+
+Step 1 — Discovery
+🔍 Icon → Analyze conversations, uncover patterns
+“We map recurring complaints and show you where to focus.”
+
+Step 2 — Solutioning
+🛠️ Icon → Build KB, fix workflows
+“We streamline your knowledge base and automate repetitive issues.”
+
+Step 3 — Acceleration
+⚡ Icon → Plug into Zendesk/Salesforce/Freshdesk
+“AI-powered add-ons deflect tickets and guide agents in real time.”
+
+4. Why Us Section (3–4 Columns)
+
+Headline: “Not Just Another AI Tool”
+
+Cards with simple icons:
+
+✅ Consulting-first → We understand before we automate
+
+✅ Works with your stack → No rip-and-replace
+
+✅ Focused niche → We specialize in recurring complaints
+
+✅ Future-ready → Marketplace add-ons that grow with you
+
+5. Social Proof Section (Placeholder)
+
+Headline: “Trusted by Support Teams Who Care About Customers”
+
+Placeholder space for:
+
+Logos of early clients or partner CRMs (Zoho, Salesforce, Zendesk, Freshdesk)
+
+Later: add testimonial quotes or a small case study card (“Reduced 28% of repetitive tickets in 4 weeks”).
+
+6. Call-to-Action (Wide Banner with Background Highlight)
+
+Headline: “Ready to Fix Customer Support at the Root?”
+
+CTA buttons centered:
+
+Primary: “Book Your Free Diagnostic Call”
+
+Secondary: “Talk to an Expert”
+
+7. Footer
+
+Tagline: “Signalyze.AI | AI solutions that turn complaints into opportunities.”
+
+Links: About | Services | Blog | Contact
+
+Small note: © 2025 Apex Meridian Private Limited
