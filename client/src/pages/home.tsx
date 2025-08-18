@@ -39,7 +39,7 @@ export default function Home() {
                 </span>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6" data-testid="text-hero-headline">
-                TURN Customer Complaints INTO 
+                Turn Customer Complaints into 
                 <span className="block mt-3 text-transparent bg-gradient-to-r from-white via-secondary to-white bg-clip-text animate-gradient">
                   Growth Opportunities
                 </span>
@@ -94,7 +94,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8" data-testid="text-problems-headline">
-                The PROBLEMS KEEPING You UP at Night
+                The problems keeping you <span className="text-secondary">UP</span> at night
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4" data-testid="problem-item-1">
@@ -146,7 +146,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4" data-testid="text-approach-headline">
-              HOW We SOLVE It
+              How <span className="text-primary">WE</span> solve it
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-approach-subtitle">
               Our proven three-step approach transforms your customer support from reactive to proactive
@@ -195,7 +195,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4" data-testid="text-whyus-headline">
-              NOT Just Another AI TOOL
+              <span className="text-accent">NOT</span> just another AI tool
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-whyus-subtitle">
               We're different because we understand your business first, then apply the right technology
@@ -251,7 +251,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4" data-testid="text-social-headline">
-              COMPATIBLE WITH leading PROVIDERS
+              Compatible with leading providers and more...
             </h2>
           </div>
           
