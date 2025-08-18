@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import signalyzeLogo from "@/assets/signalyze-logo.jpg";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,11 +25,14 @@ export function Navigation() {
     <nav className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50 transition-shadow ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">S</span>
-            </div>
-            <span className="font-bold text-xl text-slate-800">Signalyze.AI</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src={signalyzeLogo} 
+              alt="Signalyze logo"
+              className="h-8 w-auto"
+              data-testid="img-nav-logo"
+            />
+            <span className="font-bold text-xl text-slate-800">Signalyze</span>
           </div>
           <div className="hidden md:flex items-center space-x-6">
             <button 

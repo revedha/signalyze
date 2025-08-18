@@ -3,7 +3,9 @@ import { Navigation } from "@/components/navigation";
 import { ContactForm } from "@/components/contact-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Search, Settings, Zap, CheckCircle, X } from "lucide-react";
+import { Search, Settings, Zap, CheckCircle, X, Mail, Phone } from "lucide-react";
+import { SiLinkedin } from "react-icons/si";
+import signalyzeLogo from "@/assets/signalyze-logo.jpg";
 
 export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -291,11 +293,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">S</span>
-                </div>
-                <span className="font-bold text-xl" data-testid="text-footer-logo">Signalyze.AI</span>
+              <div className="flex items-center space-x-3 mb-4">
+                <img 
+                  src={signalyzeLogo} 
+                  alt="Signalyze logo"
+                  className="h-8 w-auto"
+                  data-testid="img-footer-logo"
+                />
+                <span className="font-bold text-xl" data-testid="text-footer-logo">Signalyze</span>
               </div>
               <p className="text-slate-300 mb-4" data-testid="text-footer-tagline">
                 AI solutions that turn complaints into opportunities.
@@ -345,9 +350,39 @@ export default function Home() {
             
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
-              <div className="text-slate-300 space-y-2">
-                <p className="text-sm" data-testid="text-contact-email">support@signalyze.ai</p>
-                <p className="text-sm" data-testid="text-contact-phone">+1 (555) 123-4567</p>
+              <div className="text-slate-300 space-y-3">
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4 text-primary" />
+                  <a 
+                    href="mailto:hello@signalyze.ai" 
+                    className="text-sm hover:text-white transition-colors"
+                    data-testid="link-contact-email"
+                  >
+                    hello@signalyze.ai
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4 text-primary" />
+                  <a 
+                    href="tel:+918754981502" 
+                    className="text-sm hover:text-white transition-colors"
+                    data-testid="link-contact-phone"
+                  >
+                    +91 87549 81502
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <SiLinkedin className="w-4 h-4 text-primary" />
+                  <a 
+                    href="https://www.linkedin.com/company/signalyze/about/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm hover:text-white transition-colors"
+                    data-testid="link-contact-linkedin"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </div>

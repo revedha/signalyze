@@ -142,6 +142,7 @@ export function ContactForm({ source, open, onOpenChange }: ContactFormProps) {
                     <Input 
                       placeholder="Your company name" 
                       {...field} 
+                      value={field.value || ""}
                       data-testid="input-company"
                     />
                   </FormControl>
@@ -160,6 +161,7 @@ export function ContactForm({ source, open, onOpenChange }: ContactFormProps) {
                     <Input 
                       placeholder="Your phone number" 
                       {...field} 
+                      value={field.value || ""}
                       data-testid="input-phone"
                     />
                   </FormControl>
