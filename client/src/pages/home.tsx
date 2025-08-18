@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search, Settings, Zap, CheckCircle, X, Mail, Phone } from "lucide-react";
 import { SiLinkedin } from "react-icons/si";
-import signalyzeLogo from "@/assets/signalyze-logo.jpg";
+import signalyzeIcon from "@/assets/signalyze-icon.jpg";
 
 export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -294,12 +294,14 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <img 
-                  src={signalyzeLogo} 
-                  alt="Signalyze logo"
-                  className="h-8 w-auto"
-                  data-testid="img-footer-logo"
-                />
+                <div className="w-8 h-8 bg-white rounded-lg p-1 shadow-sm">
+                  <img 
+                    src={signalyzeIcon} 
+                    alt="Signalyze icon"
+                    className="w-full h-full object-contain"
+                    data-testid="img-footer-icon"
+                  />
+                </div>
                 <span className="font-bold text-xl" data-testid="text-footer-logo">Signalyze</span>
               </div>
               <p className="text-slate-300 mb-4" data-testid="text-footer-tagline">
