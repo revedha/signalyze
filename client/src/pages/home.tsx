@@ -29,7 +29,7 @@ export default function Home() {
             <div className="text-white animate-fade-in-up">
               <div className="mb-6">
                 <span className="inline-block bg-white/10 text-white/90 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20 animate-pulse-slow">
-                  ✨ Trusted by 100+ Support Teams
+                  ✨ Trusted by leading Support Teams
                 </span>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6" data-testid="text-hero-headline">
@@ -68,13 +68,7 @@ export default function Home() {
                   Learn How It Works
                 </button>
               </div>
-              <div className="mt-8 flex items-center gap-4 text-white/60 text-sm">
-                <span>No credit card required</span>
-                <span>•</span>
-                <span>Free 30-day trial</span>
-                <span>•</span>
-                <span>Setup in 10 minutes</span>
-              </div>
+
             </div>
             <div className="lg:pl-8">
               <img 
@@ -258,36 +252,48 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             <div className="flex justify-center" data-testid="logo-salesforce">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-8 w-auto" viewBox="0 0 100 100" fill="none">
-                  <path d="M45.44 45.21c-.15-.45-.23-.92-.23-1.41 0-2.31 1.87-4.18 4.18-4.18 1.78 0 3.3 1.11 3.89 2.68.69-.47 1.52-.75 2.42-.75 2.31 0 4.18 1.87 4.18 4.18 0 .45-.07.88-.21 1.29.94.69 1.55 1.8 1.55 3.05 0 2.08-1.69 3.77-3.77 3.77H46.99c-1.73 0-3.13-1.4-3.13-3.13 0-1.39.91-2.56 2.17-2.96.28-.11.58-.17.9-.17.51 0 .99.13 1.41.36z" fill="#00A1E0"/>
-                  <circle cx="55" cy="35" r="3" fill="#00A1E0"/>
-                  <circle cx="75" cy="45" r="4" fill="#1798C1"/>
-                  <circle cx="25" cy="55" r="3.5" fill="#1798C1"/>
+                <svg className="h-10 w-auto" viewBox="0 0 200 200" fill="none">
+                  <g>
+                    <path d="M85 95c-5.5 0-10-4.5-10-10s4.5-10 10-10c3.3 0 6.2 1.6 8 4.1 1.7-1.1 3.7-1.8 5.8-1.8 5.5 0 10 4.5 10 10 0 1.1-.2 2.1-.5 3.1 2.3 1.7 3.7 4.3 3.7 7.3 0 5-4.1 9.1-9.1 9.1H90c-4.2 0-7.5-3.4-7.5-7.5 0-3.3 2.2-6.1 5.2-7.1.7-.3 1.4-.4 2.2-.4 1.2 0 2.4.3 3.4.9.4.3.9.5 1.4.5z" fill="#00A1E0"/>
+                    <circle cx="115" cy="70" r="7" fill="#00A1E0" opacity="0.8"/>
+                    <circle cx="150" cy="90" r="9" fill="#1798C1" opacity="0.7"/>
+                    <circle cx="50" cy="110" r="8" fill="#1798C1" opacity="0.6"/>
+                    <path d="M120 60c0-11-9-20-20-20s-20 9-20 20c0 3 0.7 5.8 1.9 8.3" stroke="#00A1E0" strokeWidth="3" fill="none" opacity="0.5"/>
+                  </g>
                 </svg>
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zendesk">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-8 w-auto" viewBox="0 0 100 100" fill="none">
-                  <path d="M50 10L80 40H60v40H40V40H20L50 10z" fill="#03363D"/>
-                  <circle cx="50" cy="75" r="8" fill="#03363D"/>
+                <svg className="h-10 w-auto" viewBox="0 0 200 200" fill="none">
+                  <g>
+                    <path d="M100 20L170 90H130v80H70V90H30L100 20z" fill="#03363D"/>
+                    <circle cx="100" cy="160" r="15" fill="#03363D" opacity="0.8"/>
+                    <rect x="85" y="75" width="30" height="4" fill="#17494D" opacity="0.6"/>
+                  </g>
                 </svg>
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-freshdesk">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-8 w-auto" viewBox="0 0 100 100" fill="none">
-                  <rect x="20" y="20" width="60" height="60" rx="8" fill="#F79A3E"/>
-                  <path d="M35 35h30v8H35v-8zm0 15h25v6H35v-6zm0 12h20v6H35v-6z" fill="white"/>
-                  <circle cx="70" cy="30" r="4" fill="#E85D2A"/>
+                <svg className="h-10 w-auto" viewBox="0 0 200 200" fill="none">
+                  <g>
+                    <rect x="40" y="40" width="120" height="120" rx="16" fill="#F79A3E"/>
+                    <path d="M70 70h60v16H70v-16zm0 30h50v12H70v-12zm0 24h40v12H70v-12z" fill="white"/>
+                    <circle cx="140" cy="60" r="8" fill="#E85D2A"/>
+                    <path d="M60 50h20v20H60z" fill="#E85D2A" opacity="0.3"/>
+                  </g>
                 </svg>
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zoho">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-8 w-auto" viewBox="0 0 100 100" fill="none">
-                  <path d="M25 25h50l-15 20h-20l15 20H25l15-30L25 25z" fill="#E74C3C"/>
-                  <circle cx="70" cy="30" r="6" fill="#C0392B"/>
+                <svg className="h-10 w-auto" viewBox="0 0 200 200" fill="none">
+                  <g>
+                    <path d="M50 50h100L120 100H80l30 50H50l30-60L50 50z" fill="#E74C3C"/>
+                    <circle cx="140" cy="60" r="12" fill="#C0392B"/>
+                    <path d="M50 50l20 20h20l-20-20z" fill="#C0392B" opacity="0.3"/>
+                  </g>
                 </svg>
               </div>
             </div>
@@ -353,15 +359,7 @@ export default function Home() {
                     Blog
                   </a>
                 </li>
-                <li>
-                  <button 
-                    onClick={() => openContactForm('footer')}
-                    className="hover:text-white transition-colors"
-                    data-testid="link-footer-contact"
-                  >
-                    Contact
-                  </button>
-                </li>
+
               </ul>
             </div>
             
