@@ -253,40 +253,40 @@ export default function Home() {
             </h2>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center">
             <div className="flex justify-center" data-testid="logo-salesforce">
-              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+              <div className="flex items-center justify-center h-16 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-6 group">
                 <img 
                   src={salesforceLogo} 
                   alt="Salesforce logo" 
-                  className="h-8 w-auto object-contain"
+                  className="h-10 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zendesk">
-              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+              <div className="flex items-center justify-center h-16 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-6 group">
                 <img 
                   src={zendeskLogo} 
                   alt="Zendesk logo" 
-                  className="h-8 w-auto object-contain"
+                  className="h-10 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zoho">
-              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+              <div className="flex items-center justify-center h-16 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-6 group">
                 <img 
                   src={zohoLogo} 
                   alt="Zoho logo" 
-                  className="h-8 w-auto object-contain"
+                  className="h-10 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-freshdesk">
-              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+              <div className="flex items-center justify-center h-16 w-full bg-gray-50/50 rounded-xl border border-gray-100 hover:bg-gray-50 hover:border-gray-200 transition-all duration-300 p-6 group">
                 <img 
                   src={freshdeskLogo} 
                   alt="Freshdesk logo" 
-                  className="h-8 w-auto object-contain"
+                  className="h-10 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </div>
