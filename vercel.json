@@ -5,16 +5,15 @@
       "src": "client/index.html",
       "use": "@vercel/static-build",
       "config": {
-        "buildCommand": "cd .. && npm run build",
-        "distDir": "../dist/public"
+        "buildCommand": "npm run build",
+        "distDir": "dist/public"
       }
+    },
+    {
+      "src": "api/**/*.ts",
+      "use": "@vercel/node"
     }
   ],
-  "functions": {
-    "api/index.ts": {
-      "includeFiles": ["server/**", "shared/**"]
-    }
-  },
   "routes": [
     {
       "src": "/api/(.*)",
