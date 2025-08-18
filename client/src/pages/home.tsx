@@ -11,6 +11,8 @@ import salesforceLogo from "@/assets/salesforce-logo.png";
 import zendeskLogo from "@/assets/zendesk-logo.png";
 import zohoLogo from "@/assets/zoho-logo.png";
 import freshdeskLogo from "@/assets/freshdesk-logo.png";
+import heroImage from "@assets/generated_images/Successful_business_team_collaboration_74c710dd.png";
+import problemImage from "@assets/generated_images/Overwhelmed_customer_support_team_cc68f16e.png";
 
 export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -37,7 +39,7 @@ export default function Home() {
                 </span>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6" data-testid="text-hero-headline">
-                Turn Customer Complaints Into 
+                TURN Customer Complaints INTO 
                 <span className="block mt-3 text-transparent bg-gradient-to-r from-white via-secondary to-white bg-clip-text animate-gradient">
                   Growth Opportunities
                 </span>
@@ -76,7 +78,7 @@ export default function Home() {
             </div>
             <div className="lg:pl-8">
               <img 
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                src={heroImage} 
                 alt="AI-powered support dashboard showing analytics and ticket management" 
                 className="rounded-2xl shadow-2xl w-full h-auto"
                 data-testid="img-hero-dashboard"
@@ -92,7 +94,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8" data-testid="text-problems-headline">
-                The Problems Keeping You Up at Night
+                The PROBLEMS KEEPING You UP at Night
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4" data-testid="problem-item-1">
@@ -129,7 +131,7 @@ export default function Home() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                src={problemImage} 
                 alt="Overwhelmed support team dealing with multiple customer inquiries and tickets" 
                 className="rounded-2xl shadow-lg w-full h-auto"
                 data-testid="img-frustrated-team"
@@ -144,7 +146,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4" data-testid="text-approach-headline">
-              How We Solve It
+              HOW We SOLVE It
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-approach-subtitle">
               Our proven three-step approach transforms your customer support from reactive to proactive
@@ -157,9 +159,9 @@ export default function Home() {
                 <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
                   <Search className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">Discovery</h3>
-                <p className="text-muted-foreground mb-4">Analyze conversations, uncover patterns</p>
-                <p className="text-sm text-muted-foreground">"We map recurring complaints and show you where to focus."</p>
+                <h3 className="text-xl font-bold text-foreground mb-3">DISCOVERY</h3>
+                <p className="text-muted-foreground mb-4">ANALYZE conversations, UNCOVER patterns</p>
+                <p className="text-sm text-muted-foreground">"We MAP recurring complaints and SHOW you where to FOCUS."</p>
               </CardContent>
             </Card>
 
@@ -168,9 +170,9 @@ export default function Home() {
                 <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
                   <Settings className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">Solutioning</h3>
-                <p className="text-muted-foreground mb-4">Build KB, fix workflows</p>
-                <p className="text-sm text-muted-foreground">"We streamline your knowledge base and automate repetitive issues."</p>
+                <h3 className="text-xl font-bold text-foreground mb-3">SOLUTIONING</h3>
+                <p className="text-muted-foreground mb-4">BUILD KB, FIX workflows</p>
+                <p className="text-sm text-muted-foreground">"We STREAMLINE your knowledge base and AUTOMATE repetitive issues."</p>
               </CardContent>
             </Card>
 
@@ -179,9 +181,9 @@ export default function Home() {
                 <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
                   <Zap className="w-8 h-8 text-accent" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">Acceleration</h3>
-                <p className="text-muted-foreground mb-4">Plug into Zendesk/Salesforce/Freshdesk</p>
-                <p className="text-sm text-muted-foreground">"AI-powered add-ons deflect tickets and guide agents in real time."</p>
+                <h3 className="text-xl font-bold text-foreground mb-3">ACCELERATION</h3>
+                <p className="text-muted-foreground mb-4">PLUG INTO Zendesk/Salesforce/Freshdesk</p>
+                <p className="text-sm text-muted-foreground">"AI-powered add-ons DEFLECT tickets and GUIDE agents in real time."</p>
               </CardContent>
             </Card>
           </div>
@@ -193,7 +195,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4" data-testid="text-whyus-headline">
-              Not Just Another AI Tool
+              NOT Just Another AI TOOL
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-whyus-subtitle">
               We're different because we understand your business first, then apply the right technology
@@ -249,7 +251,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4" data-testid="text-social-headline">
-              Compatible with leading providers
+              COMPATIBLE WITH leading PROVIDERS
             </h2>
           </div>
           
