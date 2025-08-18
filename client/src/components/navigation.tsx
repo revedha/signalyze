@@ -22,7 +22,7 @@ export function Navigation() {
   };
 
   return (
-    <nav className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50 transition-shadow ${isScrolled ? 'shadow-lg' : ''}`}>
+    <nav className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-primary/20 z-50 transition-shadow ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
@@ -36,28 +36,28 @@ export function Navigation() {
           <div className="hidden md:flex items-center space-x-6">
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-slate-600 hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="nav-about"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-slate-600 hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="nav-services"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-slate-600 hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="nav-contact"
             >
               Contact
             </button>
             <Button 
               onClick={() => scrollToSection('demo-signup')}
-              className="bg-accent hover:bg-orange-600 text-white btn-hover"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground btn-hover"
               data-testid="nav-book-demo"
             >
               Book Demo

@@ -68,17 +68,17 @@ export function DemoSignupForm() {
 
   if (formSubmitted) {
     return (
-      <Card className="bg-slate-800 text-white border-0 shadow-2xl">
+      <Card className="bg-foreground text-white border-0 shadow-2xl">
         <CardContent className="p-12">
           <h2 className="text-3xl font-bold mb-6" data-testid="text-thank-you">
             Thank you for your interest!
           </h2>
-          <p className="text-xl text-slate-300 mb-8" data-testid="text-schedule-message">
+          <p className="text-xl text-white/80 mb-8" data-testid="text-schedule-message">
             We've received your request. Please schedule a time that works for you:
           </p>
           <Button 
             onClick={() => window.open('https://calendly.com/signalyze', '_blank')}
-            className="bg-primary hover:bg-blue-600 text-white px-8 py-4 h-auto text-lg font-semibold btn-hover"
+            className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 h-auto text-lg font-semibold btn-hover"
             data-testid="button-schedule-demo"
           >
             Schedule Your Demo
@@ -92,10 +92,10 @@ export function DemoSignupForm() {
     <Card className="bg-white shadow-xl border-0">
       <CardContent className="p-8">
         <div className="mb-8">
-          <h2 className="text-3xl font-bold text-slate-800 mb-4" data-testid="text-demo-headline">
+          <h2 className="text-3xl font-bold text-foreground mb-4" data-testid="text-demo-headline">
             Ready to See How It Works?
           </h2>
-          <p className="text-xl text-slate-600" data-testid="text-demo-subtitle">
+          <p className="text-xl text-muted-foreground" data-testid="text-demo-subtitle">
             Enter your email to book a personalized demo of our AI-powered customer support solution.
           </p>
         </div>
@@ -107,7 +107,7 @@ export function DemoSignupForm() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-slate-700 font-medium">Work Email</FormLabel>
+                  <FormLabel className="text-foreground font-medium">Work Email</FormLabel>
                   <FormControl>
                     <Input 
                       type="email" 
@@ -125,7 +125,7 @@ export function DemoSignupForm() {
             <Button 
               type="submit" 
               disabled={isSubmitting}
-              className="w-full bg-accent hover:bg-orange-600 text-white h-12 text-lg font-semibold btn-hover"
+              className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-12 text-lg font-semibold btn-hover"
               data-testid="button-demo-submit"
             >
               {isSubmitting ? "Submitting..." : "Book a Demo"}
@@ -133,7 +133,7 @@ export function DemoSignupForm() {
           </form>
         </Form>
         
-        <p className="text-sm text-slate-500 mt-4 text-center" data-testid="text-demo-disclaimer">
+        <p className="text-sm text-muted-foreground mt-4 text-center" data-testid="text-demo-disclaimer">
           No spam, just valuable insights about improving your customer support.
         </p>
       </CardContent>
