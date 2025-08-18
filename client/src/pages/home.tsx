@@ -252,47 +252,45 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             <div className="flex justify-center" data-testid="logo-salesforce">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-10 w-auto" viewBox="0 0 200 200" fill="none">
-                  <g>
-                    <path d="M85 95c-5.5 0-10-4.5-10-10s4.5-10 10-10c3.3 0 6.2 1.6 8 4.1 1.7-1.1 3.7-1.8 5.8-1.8 5.5 0 10 4.5 10 10 0 1.1-.2 2.1-.5 3.1 2.3 1.7 3.7 4.3 3.7 7.3 0 5-4.1 9.1-9.1 9.1H90c-4.2 0-7.5-3.4-7.5-7.5 0-3.3 2.2-6.1 5.2-7.1.7-.3 1.4-.4 2.2-.4 1.2 0 2.4.3 3.4.9.4.3.9.5 1.4.5z" fill="#00A1E0"/>
-                    <circle cx="115" cy="70" r="7" fill="#00A1E0" opacity="0.8"/>
-                    <circle cx="150" cy="90" r="9" fill="#1798C1" opacity="0.7"/>
-                    <circle cx="50" cy="110" r="8" fill="#1798C1" opacity="0.6"/>
-                    <path d="M120 60c0-11-9-20-20-20s-20 9-20 20c0 3 0.7 5.8 1.9 8.3" stroke="#00A1E0" strokeWidth="3" fill="none" opacity="0.5"/>
-                  </g>
+                <svg className="h-10 w-auto" viewBox="0 0 240 100" fill="none">
+                  <path d="M25 50c0-15 12-27 27-27 8 0 15 3.5 20 9 3-2 6.5-3 10-3 10 0 18 8 18 18 0 1.5-.2 3-.6 4.5 4 3 6.6 7.5 6.6 12.5 0 9-7.3 16.3-16.3 16.3H35c-5.5 0-10-4.5-10-10 0-4.5 3-8.3 7-9.5 1-.3 2-.5 3-.5 2 0 4 .5 5.5 1.3C24 61 25 55.8 25 50z" fill="#00A1E0"/>
+                  <circle cx="75" cy="35" r="5" fill="#00A1E0" opacity="0.7"/>
+                  <circle cx="105" cy="25" r="6" fill="#1798C1" opacity="0.6"/>
+                  <circle cx="45" cy="25" r="4" fill="#1798C1" opacity="0.5"/>
                 </svg>
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zendesk">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-10 w-auto" viewBox="0 0 200 200" fill="none">
+                <svg className="h-10 w-auto" viewBox="0 0 100 100" fill="none">
                   <g>
-                    <path d="M100 20L170 90H130v80H70V90H30L100 20z" fill="#03363D"/>
-                    <circle cx="100" cy="160" r="15" fill="#03363D" opacity="0.8"/>
-                    <rect x="85" y="75" width="30" height="4" fill="#17494D" opacity="0.6"/>
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <div className="flex justify-center" data-testid="logo-freshdesk">
-              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-10 w-auto" viewBox="0 0 200 200" fill="none">
-                  <g>
-                    <rect x="40" y="40" width="120" height="120" rx="16" fill="#F79A3E"/>
-                    <path d="M70 70h60v16H70v-16zm0 30h50v12H70v-12zm0 24h40v12H70v-12z" fill="white"/>
-                    <circle cx="140" cy="60" r="8" fill="#E85D2A"/>
-                    <path d="M60 50h20v20H60z" fill="#E85D2A" opacity="0.3"/>
+                    <circle cx="25" cy="25" r="20" fill="#03363D"/>
+                    <polygon points="75,25 75,75 25,75" fill="#03363D"/>
+                    <circle cx="75" cy="75" r="15" fill="#03363D" opacity="0.8"/>
                   </g>
                 </svg>
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zoho">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-10 w-auto" viewBox="0 0 200 200" fill="none">
+                <svg className="h-12 w-auto" viewBox="0 0 160 40" fill="none">
                   <g>
-                    <path d="M50 50h100L120 100H80l30 50H50l30-60L50 50z" fill="#E74C3C"/>
-                    <circle cx="140" cy="60" r="12" fill="#C0392B"/>
-                    <path d="M50 50l20 20h20l-20-20z" fill="#C0392B" opacity="0.3"/>
+                    <rect x="5" y="5" width="30" height="30" rx="8" stroke="#E74C3C" strokeWidth="4" fill="none"/>
+                    <rect x="25" y="5" width="30" height="30" rx="8" stroke="#4CAF50" strokeWidth="4" fill="none" transform="rotate(15 40 20)"/>
+                    <rect x="45" y="5" width="30" height="30" rx="8" stroke="#2196F3" strokeWidth="4" fill="none" transform="rotate(30 60 20)"/>
+                    <rect x="65" y="5" width="30" height="30" rx="8" stroke="#FF9800" strokeWidth="4" fill="none" transform="rotate(45 80 20)"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div className="flex justify-center" data-testid="logo-freshdesk">
+              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+                <svg className="h-10 w-auto" viewBox="0 0 100 100" fill="none">
+                  <g>
+                    <rect x="20" y="20" width="60" height="60" rx="12" fill="#4CBB17"/>
+                    <circle cx="50" cy="50" r="15" fill="white"/>
+                    <path d="M45 45h10v2h-10v-2zm0 5h8v2h-8v-2zm0 5h6v2h-6v-2z" fill="#4CBB17"/>
+                    <path d="M42 48c0-1.1.9-2 2-2h1v-1c0-1.1.9-2 2-2s2 .9 2 2v1h1c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2h-6c-1.1 0-2-.9-2-2v-8z" fill="white" opacity="0.9"/>
                   </g>
                 </svg>
               </div>
