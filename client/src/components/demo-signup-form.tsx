@@ -93,7 +93,7 @@ export function DemoSignupForm() {
       <CardContent className="p-8">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-foreground mb-4" data-testid="text-demo-headline">
-            Ready to See How It Works?
+            Ready to see how it works?
           </h2>
           <p className="text-xl text-muted-foreground" data-testid="text-demo-subtitle">
             Enter your email to book a personalized demo of our AI-powered customer support solution.

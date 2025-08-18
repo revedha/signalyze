@@ -101,21 +101,21 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-1">
               <CardContent className="p-0">
-                <h3 className="text-lg font-bold text-foreground mb-3 text-center">Same Questions, Again and Again</h3>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">SAME QUESTIONS, AGAIN AND AGAIN</h3>
                 <p className="text-sm text-muted-foreground text-center">Up to 40% of tickets are duplicates of previously answered issues, creating unnecessary workload for your team.</p>
               </CardContent>
             </Card>
 
             <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-2">
               <CardContent className="p-0">
-                <h3 className="text-lg font-bold text-foreground mb-3 text-center">Knowledge Base That Nobody Uses</h3>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">KNOWLEDGE BASE THAT NOBODY USES</h3>
                 <p className="text-sm text-muted-foreground text-center">Over 60% of self-service portals fail because content is outdated, incomplete, or hard to find.</p>
               </CardContent>
             </Card>
 
             <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-3">
               <CardContent className="p-0">
-                <h3 className="text-lg font-bold text-foreground mb-3 text-center">Long Queues, Frustrated Customers</h3>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">LONG QUEUES, FRUSTRATED CUSTOMERS</h3>
                 <p className="text-sm text-muted-foreground text-center">Customer satisfaction drops by 20% when response times stretch beyond 24 hours.</p>
               </CardContent>
             </Card>
@@ -125,14 +125,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-4">
               <CardContent className="p-0">
-                <h3 className="text-lg font-bold text-foreground mb-3 text-center">Agents Stuck Hunting for Answers</h3>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">AGENTS STUCK HUNTING FOR ANSWERS</h3>
                 <p className="text-sm text-muted-foreground text-center">Support reps spend nearly 30% of their day just looking for information instead of resolving tickets.</p>
               </CardContent>
             </Card>
 
             <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-5">
               <CardContent className="p-0">
-                <h3 className="text-lg font-bold text-foreground mb-3 text-center">No Single Source of Truth</h3>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">NO SINGLE SOURCE OF TRUTH</h3>
                 <p className="text-sm text-muted-foreground text-center">The average company uses 3–5 tools for customer support, causing longer resolution times and higher agent frustration.</p>
               </CardContent>
             </Card>
@@ -201,13 +201,13 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <Card className="card-hover bg-white p-6 text-center shadow-sm" data-testid="card-feature-1">
               <CardContent className="p-0">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-foreground mb-2">Consulting-first</h3>
+                <h3 className="font-bold text-foreground mb-2">CONSULTING-FIRST</h3>
                 <p className="text-sm text-muted-foreground">We understand before we automate</p>
               </CardContent>
             </Card>
@@ -217,7 +217,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-foreground mb-2">Works with your stack</h3>
+                <h3 className="font-bold text-foreground mb-2">WORKS WITH YOUR STACK</h3>
                 <p className="text-sm text-muted-foreground">No rip-and-replace</p>
               </CardContent>
             </Card>
@@ -227,17 +227,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-foreground mb-2">Focused niche</h3>
-                <p className="text-sm text-muted-foreground">We specialize in recurring complaints</p>
-              </CardContent>
-            </Card>
-
-            <Card className="card-hover bg-white p-6 text-center shadow-sm" data-testid="card-feature-4">
-              <CardContent className="p-0">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-bold text-foreground mb-2">Future-ready</h3>
+                <h3 className="font-bold text-foreground mb-2">FUTURE-READY</h3>
                 <p className="text-sm text-muted-foreground">Marketplace add-ons that grow with you</p>
               </CardContent>
             </Card>
