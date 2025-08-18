@@ -26,15 +26,22 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
+            <div className="text-white animate-fade-in-up">
+              <div className="mb-6">
+                <span className="inline-block bg-white/10 text-white/90 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20 animate-pulse-slow">
+                  ✨ Trusted by 100+ Support Teams
+                </span>
+              </div>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6" data-testid="text-hero-headline">
                 Turn Customer Complaints Into 
-                <span className="text-white bg-primary/20 px-2 py-1 rounded"> Growth Opportunities</span>
+                <span className="block mt-3 text-transparent bg-gradient-to-r from-white via-secondary to-white bg-clip-text animate-gradient">
+                  Growth Opportunities
+                </span>
               </h1>
-              <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed" data-testid="text-hero-subtitle">
+              <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl" data-testid="text-hero-subtitle">
                 We help SMBs cut down repetitive support tickets, build smarter knowledge bases, and empower agents with AI-driven insights.
               </p>
-              <div className="flex justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <Button 
                   onClick={() => {
                     const demoSection = document.getElementById('demo-signup');
@@ -42,11 +49,31 @@ export default function Home() {
                       demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                   }}
-                  className="bg-white text-primary hover:bg-white/90 px-8 py-4 h-auto text-lg font-semibold btn-hover shadow-xl border-2 border-white"
+                  className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 px-8 py-4 h-auto text-lg font-semibold shadow-xl border-2 border-white group"
                   data-testid="button-hero-demo"
                 >
-                  Book a Demo
+                  Book a Demo 
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform duration-200">→</span>
                 </Button>
+                <button 
+                  onClick={() => {
+                    const servicesSection = document.getElementById('services');
+                    if (servicesSection) {
+                      servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className="text-white hover:text-secondary transition-colors duration-200 px-8 py-4 text-lg font-medium underline underline-offset-4 hover:underline-offset-8"
+                  data-testid="button-hero-learn-more"
+                >
+                  Learn How It Works
+                </button>
+              </div>
+              <div className="mt-8 flex items-center gap-4 text-white/60 text-sm">
+                <span>No credit card required</span>
+                <span>•</span>
+                <span>Free 30-day trial</span>
+                <span>•</span>
+                <span>Setup in 10 minutes</span>
               </div>
             </div>
             <div className="lg:pl-8">
@@ -230,27 +257,38 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             <div className="flex justify-center" data-testid="logo-salesforce">
-              <div className="flex items-center justify-center h-16">
-                <SiSalesforce className="h-12 w-12 text-[#00A1E0] opacity-70" />
+              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+                <svg className="h-8 w-auto" viewBox="0 0 100 100" fill="none">
+                  <path d="M45.44 45.21c-.15-.45-.23-.92-.23-1.41 0-2.31 1.87-4.18 4.18-4.18 1.78 0 3.3 1.11 3.89 2.68.69-.47 1.52-.75 2.42-.75 2.31 0 4.18 1.87 4.18 4.18 0 .45-.07.88-.21 1.29.94.69 1.55 1.8 1.55 3.05 0 2.08-1.69 3.77-3.77 3.77H46.99c-1.73 0-3.13-1.4-3.13-3.13 0-1.39.91-2.56 2.17-2.96.28-.11.58-.17.9-.17.51 0 .99.13 1.41.36z" fill="#00A1E0"/>
+                  <circle cx="55" cy="35" r="3" fill="#00A1E0"/>
+                  <circle cx="75" cy="45" r="4" fill="#1798C1"/>
+                  <circle cx="25" cy="55" r="3.5" fill="#1798C1"/>
+                </svg>
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zendesk">
-              <div className="flex items-center justify-center h-16">
-                <SiZendesk className="h-12 w-12 text-[#03363D] opacity-70" />
+              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+                <svg className="h-8 w-auto" viewBox="0 0 100 100" fill="none">
+                  <path d="M50 10L80 40H60v40H40V40H20L50 10z" fill="#03363D"/>
+                  <circle cx="50" cy="75" r="8" fill="#03363D"/>
+                </svg>
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-freshdesk">
-              <div className="flex items-center justify-center h-16">
-                <div className="h-12 w-12 bg-[#F79A3E] rounded-lg flex items-center justify-center opacity-70">
-                  <span className="text-white font-bold text-sm">F</span>
-                </div>
+              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+                <svg className="h-8 w-auto" viewBox="0 0 100 100" fill="none">
+                  <rect x="20" y="20" width="60" height="60" rx="8" fill="#F79A3E"/>
+                  <path d="M35 35h30v8H35v-8zm0 15h25v6H35v-6zm0 12h20v6H35v-6z" fill="white"/>
+                  <circle cx="70" cy="30" r="4" fill="#E85D2A"/>
+                </svg>
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zoho">
-              <div className="flex items-center justify-center h-16">
-                <div className="h-12 w-12 bg-[#E74C3C] rounded-lg flex items-center justify-center opacity-70">
-                  <span className="text-white font-bold text-sm">Z</span>
-                </div>
+              <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+                <svg className="h-8 w-auto" viewBox="0 0 100 100" fill="none">
+                  <path d="M25 25h50l-15 20h-20l15 20H25l15-30L25 25z" fill="#E74C3C"/>
+                  <circle cx="70" cy="30" r="6" fill="#C0392B"/>
+                </svg>
               </div>
             </div>
           </div>

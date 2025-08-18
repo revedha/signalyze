@@ -45,6 +45,34 @@
   --cta-gradient: linear-gradient(135deg, hsl(151, 65%, 11%) 0%, hsl(148, 100%, 24%) 100%);
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
 .dark {
   --background: hsl(151, 65%, 11%);
   --foreground: hsl(139, 56%, 95%);
