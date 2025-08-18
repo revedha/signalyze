@@ -61,22 +61,27 @@ export default function Home() {
               </div>
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed max-w-4xl mx-auto" data-testid="text-hero-subtitle">
-              We help SMBs cut down repetitive support tickets, build smarter knowledge bases, and empower agents with AI-driven insights.
+              We help YOU cut down repetitive support tickets, build smarter knowledge bases, and empower agents with AI-driven insights.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-              <Button 
-                onClick={() => {
-                  const demoSection = document.getElementById('demo-signup');
-                  if (demoSection) {
-                    demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }
-                }}
-                className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 px-8 py-4 h-auto text-lg font-semibold shadow-xl border-2 border-white group"
-                data-testid="button-hero-demo"
-              >
-                Book a Demo 
-                <span className="ml-2 group-hover:translate-x-1 transition-transform duration-200">→</span>
-              </Button>
+              <div className="flex flex-col items-center gap-3">
+                <Button 
+                  onClick={() => {
+                    const demoSection = document.getElementById('demo-signup');
+                    if (demoSection) {
+                      demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 px-8 py-4 h-auto text-lg font-semibold shadow-xl border-2 border-white group"
+                  data-testid="button-hero-demo"
+                >
+                  Book a Demo 
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform duration-200">→</span>
+                </Button>
+                <p className="text-white/80 text-lg font-medium" data-testid="text-hero-cost-reduction">
+                  Cut support costs by 30% in 90 days
+                </p>
+              </div>
               <button 
                 onClick={() => {
                   const servicesSection = document.getElementById('services');
@@ -320,6 +325,9 @@ export default function Home() {
               </p>
               <p className="text-sm text-white/60" data-testid="text-footer-copyright">
                 © 2025 Apex Meridian Private Limited
+              </p>
+              <p className="text-sm text-white/60 mt-1" data-testid="text-footer-tagline">
+                Handcrafted in India for the world
               </p>
             </div>
             
