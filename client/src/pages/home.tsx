@@ -91,52 +91,66 @@ export default function Home() {
       {/* Problem Section */}
       <section className="problem-gradient py-16 lg:py-24" id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8" data-testid="text-problems-headline">
-                The problems keeping you <span className="text-secondary">UP</span> at night
-              </h2>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4" data-testid="problem-item-1">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-1">
-                    <X className="w-4 h-4 text-white" />
-                  </div>
-                  <p className="text-lg text-muted-foreground font-medium">Same questions asked repeatedly</p>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4" data-testid="text-problems-headline">
+              The problems keeping you <span className="text-secondary">UP</span> at night
+            </h2>
+          </div>
+          
+          {/* First Row - 3 Cards */}
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-1">
+              <CardContent className="p-0">
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <X className="w-6 h-6 text-red-500" />
                 </div>
-                <div className="flex items-start space-x-4" data-testid="problem-item-2">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-1">
-                    <X className="w-4 h-4 text-white" />
-                  </div>
-                  <p className="text-lg text-muted-foreground font-medium">Outdated / unused knowledge base</p>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">Same Questions, Again and Again</h3>
+                <p className="text-sm text-muted-foreground text-center">Up to 40% of tickets are duplicates of previously answered issues, creating unnecessary workload for your team.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-2">
+              <CardContent className="p-0">
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <X className="w-6 h-6 text-red-500" />
                 </div>
-                <div className="flex items-start space-x-4" data-testid="problem-item-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-1">
-                    <X className="w-4 h-4 text-white" />
-                  </div>
-                  <p className="text-lg text-muted-foreground font-medium">Agents time wasted searching for answers</p>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">Knowledge Base That Nobody Uses</h3>
+                <p className="text-sm text-muted-foreground text-center">Over 60% of self-service portals fail because content is outdated, incomplete, or hard to find.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-3">
+              <CardContent className="p-0">
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <X className="w-6 h-6 text-red-500" />
                 </div>
-                <div className="flex items-start space-x-4" data-testid="problem-item-4">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-1">
-                    <X className="w-4 h-4 text-white" />
-                  </div>
-                  <p className="text-lg text-muted-foreground font-medium">Ticket queues → unhappy customers</p>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">Long Queues, Frustrated Customers</h3>
+                <p className="text-sm text-muted-foreground text-center">Customer satisfaction drops by 20% when response times stretch beyond 24 hours.</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Second Row - 2 Cards */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-4">
+              <CardContent className="p-0">
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <X className="w-6 h-6 text-red-500" />
                 </div>
-                <div className="flex items-start space-x-4" data-testid="problem-item-5">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-1">
-                    <X className="w-4 h-4 text-white" />
-                  </div>
-                  <p className="text-lg text-muted-foreground font-medium">Scattered information across tools → no single source of truth</p>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">Agents Stuck Hunting for Answers</h3>
+                <p className="text-sm text-muted-foreground text-center">Support reps spend nearly 30% of their day just looking for information instead of resolving tickets.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="card-hover bg-white border-2 border-red-100 p-6" data-testid="card-problem-5">
+              <CardContent className="p-0">
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <X className="w-6 h-6 text-red-500" />
                 </div>
-              </div>
-            </div>
-            <div>
-              <img 
-                src={problemImage} 
-                alt="Overwhelmed support team dealing with multiple customer inquiries and tickets" 
-                className="rounded-2xl shadow-lg w-full h-auto"
-                data-testid="img-frustrated-team"
-              />
-            </div>
+                <h3 className="text-lg font-bold text-foreground mb-3 text-center">No Single Source of Truth</h3>
+                <p className="text-sm text-muted-foreground text-center">The average company uses 3–5 tools for customer support, causing longer resolution times and higher agent frustration.</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
