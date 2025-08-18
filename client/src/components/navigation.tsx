@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import signalyzeLogo from "@/assets/signalyze-logo.png";
+import signalyzeLogoGreen from "@/assets/signalyze-logo-green.png";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +27,7 @@ export function Navigation() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <img 
-              src={signalyzeLogo} 
+              src={signalyzeLogoGreen} 
               alt="Signalyze logo"
               className="h-8 w-auto"
               data-testid="img-nav-logo"
