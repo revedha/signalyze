@@ -63,8 +63,8 @@ export default function Home() {
             <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed max-w-4xl mx-auto" data-testid="text-hero-subtitle">
               We help YOU cut down repetitive support tickets, build smarter knowledge bases, and empower agents with AI-driven insights.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-              <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center justify-center gap-6">
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
                 <Button 
                   onClick={() => {
                     const demoSection = document.getElementById('demo-signup');
@@ -78,22 +78,22 @@ export default function Home() {
                   Book a Demo 
                   <span className="ml-2 group-hover:translate-x-1 transition-transform duration-200">→</span>
                 </Button>
-                <p className="text-white/80 text-lg font-medium" data-testid="text-hero-cost-reduction">
-                  Cut support costs by 30% in 90 days
-                </p>
+                <button 
+                  onClick={() => {
+                    const servicesSection = document.getElementById('services');
+                    if (servicesSection) {
+                      servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className="text-white hover:text-secondary transition-colors duration-200 px-8 py-4 text-lg font-medium underline underline-offset-4 hover:underline-offset-8"
+                  data-testid="button-hero-learn-more"
+                >
+                  Learn How It Works
+                </button>
               </div>
-              <button 
-                onClick={() => {
-                  const servicesSection = document.getElementById('services');
-                  if (servicesSection) {
-                    servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }
-                }}
-                className="text-white hover:text-secondary transition-colors duration-200 px-8 py-4 text-lg font-medium underline underline-offset-4 hover:underline-offset-8"
-                data-testid="button-hero-learn-more"
-              >
-                Learn How It Works
-              </button>
+              <p className="text-white/80 text-lg font-medium text-center" data-testid="text-hero-cost-reduction">
+                Cut support costs by 30% in 90 days
+              </p>
             </div>
           </div>
         </div>
