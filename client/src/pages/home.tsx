@@ -7,6 +7,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Search, Settings, Zap, CheckCircle, X, Mail, Phone } from "lucide-react";
 import { SiLinkedin, SiSalesforce, SiZendesk } from "react-icons/si";
 import signalyzeLogo from "@/assets/signalyze-logo.png";
+import salesforceLogo from "@/assets/salesforce-logo.png";
+import zendeskLogo from "@/assets/zendesk-logo.png";
+import zohoLogo from "@/assets/zoho-logo.png";
+import freshdeskLogo from "@/assets/freshdesk-logo.png";
 
 export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -245,54 +249,45 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4" data-testid="text-social-headline">
-              Trusted by Support Teams Who Care About Customers
+              Compatible with leading providers
             </h2>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             <div className="flex justify-center" data-testid="logo-salesforce">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-10 w-auto" viewBox="0 0 240 100" fill="none">
-                  <path d="M25 50c0-15 12-27 27-27 8 0 15 3.5 20 9 3-2 6.5-3 10-3 10 0 18 8 18 18 0 1.5-.2 3-.6 4.5 4 3 6.6 7.5 6.6 12.5 0 9-7.3 16.3-16.3 16.3H35c-5.5 0-10-4.5-10-10 0-4.5 3-8.3 7-9.5 1-.3 2-.5 3-.5 2 0 4 .5 5.5 1.3C24 61 25 55.8 25 50z" fill="#00A1E0"/>
-                  <circle cx="75" cy="35" r="5" fill="#00A1E0" opacity="0.7"/>
-                  <circle cx="105" cy="25" r="6" fill="#1798C1" opacity="0.6"/>
-                  <circle cx="45" cy="25" r="4" fill="#1798C1" opacity="0.5"/>
-                </svg>
+                <img 
+                  src={salesforceLogo} 
+                  alt="Salesforce logo" 
+                  className="h-8 w-auto object-contain"
+                />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zendesk">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-10 w-auto" viewBox="0 0 100 100" fill="none">
-                  <g>
-                    <circle cx="25" cy="25" r="20" fill="#03363D"/>
-                    <polygon points="75,25 75,75 25,75" fill="#03363D"/>
-                    <circle cx="75" cy="75" r="15" fill="#03363D" opacity="0.8"/>
-                  </g>
-                </svg>
+                <img 
+                  src={zendeskLogo} 
+                  alt="Zendesk logo" 
+                  className="h-8 w-auto object-contain"
+                />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-zoho">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-12 w-auto" viewBox="0 0 160 40" fill="none">
-                  <g>
-                    <rect x="5" y="5" width="30" height="30" rx="8" stroke="#E74C3C" strokeWidth="4" fill="none"/>
-                    <rect x="25" y="5" width="30" height="30" rx="8" stroke="#4CAF50" strokeWidth="4" fill="none" transform="rotate(15 40 20)"/>
-                    <rect x="45" y="5" width="30" height="30" rx="8" stroke="#2196F3" strokeWidth="4" fill="none" transform="rotate(30 60 20)"/>
-                    <rect x="65" y="5" width="30" height="30" rx="8" stroke="#FF9800" strokeWidth="4" fill="none" transform="rotate(45 80 20)"/>
-                  </g>
-                </svg>
+                <img 
+                  src={zohoLogo} 
+                  alt="Zoho logo" 
+                  className="h-8 w-auto object-contain"
+                />
               </div>
             </div>
             <div className="flex justify-center" data-testid="logo-freshdesk">
               <div className="flex items-center justify-center h-16 w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
-                <svg className="h-10 w-auto" viewBox="0 0 100 100" fill="none">
-                  <g>
-                    <rect x="20" y="20" width="60" height="60" rx="12" fill="#4CBB17"/>
-                    <circle cx="50" cy="50" r="15" fill="white"/>
-                    <path d="M45 45h10v2h-10v-2zm0 5h8v2h-8v-2zm0 5h6v2h-6v-2z" fill="#4CBB17"/>
-                    <path d="M42 48c0-1.1.9-2 2-2h1v-1c0-1.1.9-2 2-2s2 .9 2 2v1h1c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2h-6c-1.1 0-2-.9-2-2v-8z" fill="white" opacity="0.9"/>
-                  </g>
-                </svg>
+                <img 
+                  src={freshdeskLogo} 
+                  alt="Freshdesk logo" 
+                  className="h-8 w-auto object-contain"
+                />
               </div>
             </div>
           </div>
