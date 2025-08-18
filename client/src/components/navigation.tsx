@@ -56,7 +56,7 @@ export function Navigation() {
               Contact
             </button>
             <Button 
-              onClick={() => scrollToSection('hero-cta')}
+              onClick={() => scrollToSection('demo-signup')}
               className="bg-accent hover:bg-orange-600 text-white btn-hover"
               data-testid="nav-book-demo"
             >

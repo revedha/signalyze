@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navigation } from "@/components/navigation";
 import { ContactForm } from "@/components/contact-form";
+import { DemoSignupForm } from "@/components/demo-signup-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search, Settings, Zap, CheckCircle, X, Mail, Phone } from "lucide-react";
@@ -33,21 +34,18 @@ export default function Home() {
               <p className="text-xl lg:text-2xl text-blue-100 mb-8 leading-relaxed" data-testid="text-hero-subtitle">
                 We help SMBs cut down repetitive support tickets, build smarter knowledge bases, and empower agents with AI-driven insights.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex justify-start">
                 <Button 
-                  onClick={() => openContactForm('hero-primary')}
+                  onClick={() => {
+                    const demoSection = document.getElementById('demo-signup');
+                    if (demoSection) {
+                      demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
                   className="bg-accent hover:bg-orange-600 text-white px-8 py-4 h-auto text-lg font-semibold btn-hover shadow-xl"
-                  data-testid="button-hero-primary"
+                  data-testid="button-hero-demo"
                 >
-                  Book a Free Diagnostic Call
-                </Button>
-                <Button 
-                  variant="outline"
-                  onClick={() => openContactForm('hero-secondary')}
-                  className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 h-auto text-lg font-semibold btn-hover"
-                  data-testid="button-hero-secondary"
-                >
-                  See How It Works
+                  Book a Demo
                 </Button>
               </div>
             </div>
@@ -268,23 +266,27 @@ export default function Home() {
             Stop fighting the symptoms. Let's solve the real problems in your customer support process.
           </p>
           
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex justify-center">
             <Button 
-              onClick={() => openContactForm('cta-primary')}
+              onClick={() => {
+                const demoSection = document.getElementById('demo-signup');
+                if (demoSection) {
+                  demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
               className="bg-accent hover:bg-orange-600 text-white px-8 py-4 h-auto text-lg font-semibold btn-hover shadow-xl"
-              data-testid="button-cta-primary"
+              data-testid="button-cta-demo"
             >
-              Book Your Free Diagnostic Call
-            </Button>
-            <Button 
-              variant="outline"
-              onClick={() => openContactForm('cta-secondary')}
-              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 h-auto text-lg font-semibold btn-hover"
-              data-testid="button-cta-secondary"
-            >
-              Talk to an Expert
+              Book a Demo
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Demo Signup Section */}
+      <section className="py-16 lg:py-24 bg-slate-50" id="demo-signup">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <DemoSignupForm />
         </div>
       </section>
 
