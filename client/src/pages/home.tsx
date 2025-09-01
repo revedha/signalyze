@@ -358,7 +358,7 @@ export default function Home() {
                     className="hover:text-white transition-colors" 
                     data-testid="link-footer-refund-policy"
                   >
-                    Refunds & Cancellation policy
+                    Refunds & Cancellation
                   </a>
                 </li>
 
