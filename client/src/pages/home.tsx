@@ -354,7 +354,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a 
-                    href="/refundpolicy" 
+                    href="/refunds" 
                     className="hover:text-white transition-colors" 
                     data-testid="link-footer-refund-policy"
                   >
