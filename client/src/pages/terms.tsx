@@ -91,7 +91,7 @@ export function Terms() {
                 <li><strong>Corporate Identity Number (CIN):</strong> U62099TN2025PTC182588</li>
                 <li><strong>Permanent Account Number (PAN):</strong> ABDCA3624M</li>
                 <li><strong>Tax Deduction and Collection Account Number (TAN):</strong> CHEA41874A</li>
-                <li><strong>GST Identification Number (GSTIN):</strong> [To be updated upon receipt]</li>
+                <li><strong>GST Identification Number (GSTIN):</strong> 33ABDCA3624M1ZR</li>
                 <li><strong>Registered Office:</strong> A4, Chandrasekaran avenue, 1st Main Rd, Thoraipakkam, Tamil Nadu 600097</li>
                 <li><strong>Contact Email:</strong> <a href="mailto:revedha@signalyze.ai" className="text-primary hover:underline">revedha@signalyze.ai</a></li>
               </ul>
