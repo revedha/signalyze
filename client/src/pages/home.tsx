@@ -344,17 +344,21 @@ export default function Home() {
                   </button>
                 </li>
                 <li>
-                  <button 
-                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  <a 
+                    href="/terms" 
                     className="hover:text-white transition-colors"
-                    data-testid="link-footer-services"
+                    data-testid="link-footer-terms"
                   >
-                    Services
-                  </button>
+                    Terms
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors" data-testid="link-footer-blog">
-                    Blog
+                  <a 
+                    href="/refundpolicy" 
+                    className="hover:text-white transition-colors" 
+                    data-testid="link-footer-refund-policy"
+                  >
+                    Refunds & Cancellation policy
                   </a>
                 </li>
 
