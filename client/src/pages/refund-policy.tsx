@@ -37,7 +37,7 @@ export function RefundPolicy() {
               <div className="mb-6">
                 <h3 className="text-xl font-semibold text-slate-800 mb-3">For Retainer-Based Services:</h3>
                 <ul className="text-slate-700 leading-relaxed space-y-2 pl-6">
-                  <li className="list-disc">You may cancel your ongoing retainer service by providing 30 days' written notice to your primary contact at Signalyze or by emailing <a href="mailto:revedha@signalyze.ai" className="text-primary hover:underline">revedha@signalyze.ai</a>.</li>
+                  <li className="list-disc">You may cancel your ongoing retainer service by providing 30 days' written notice to your primary contact at Signalyze or by emailing <a href="mailto:billing@signalyze.ai" className="text-primary hover:underline">billing@signalyze.ai</a>.</li>
                   <li className="list-disc">Your service will continue, and you will be billed for the final 30-day notice period. This allows us to complete any in-progress analysis and provide a final hand-off report.</li>
                   <li className="list-disc">No new workstreams will be initiated during this notice period.</li>
                 </ul>
@@ -75,7 +75,7 @@ export function RefundPolicy() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-primary mb-4">4. How to Request a Cancellation</h2>
               <p className="text-slate-700 leading-relaxed mb-4">
-                All cancellation requests must be sent in writing via email to your account manager and/or to <a href="mailto:revedha@signalyze.ai" className="text-primary hover:underline">revedha@signalyze.ai</a>. The cancellation notice period will begin on the first business day following our acknowledgment of receipt of your request.
+                All cancellation requests must be sent in writing via email to your account manager and/or to <a href="mailto:billing@signalyze.ai" className="text-primary hover:underline">billing@signalyze.ai</a>. The cancellation notice period will begin on the first business day following our acknowledgment of receipt of your request.
               </p>
             </section>
           </div>

@@ -93,7 +93,7 @@ export function Terms() {
                 <li><strong>Tax Deduction and Collection Account Number (TAN):</strong> CHEA41874A</li>
                 <li><strong>GST Identification Number (GSTIN):</strong> 33ABDCA3624M1ZR</li>
                 <li><strong>Registered Office:</strong> A4, Chandrasekaran avenue, 1st Main Rd, Thoraipakkam, Tamil Nadu 600097</li>
-                <li><strong>Contact Email:</strong> <a href="mailto:revedha@signalyze.ai" className="text-primary hover:underline">revedha@signalyze.ai</a></li>
+                <li><strong>Contact Email:</strong> <a href="mailto:hello@signalyze.ai" className="text-primary hover:underline">hello@signalyze.ai</a></li>
               </ul>
             </section>
           </div>
